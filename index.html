@@ -38,11 +38,27 @@
                 </div>
                 <!-- select Part VV -->
                 <div class="border-2 bg-black text-white">
-                    <h1 class="text-center font-bold text-2xl pt-4">Selected - V</h1>
+                    <h1 class="text-center font-bold text-2xl pt-4">Selected - <span class="text-orange-500">0</span></h1>
                     <hr class="w-9/12 mx-auto border-red-800 border-2">
-                    <ul class="text-xl mx-4 my-5">
-                        <li class="order-1">Kaka</li>
-                    </ul>
+                    <div class="overflow-x-auto">
+                        <table class="table table-zebra w-full">
+                          <!-- head -->
+                          <thead>
+                            <tr>
+                              <!-- <th></th>
+                              <th>Product Name</th>
+                              <th>Price</th> -->
+                            </tr>
+                          </thead>
+                          <tbody id="products-cart">
+                            <tr>
+                                <!-- <th>1</th>
+                                <td>Cy Ganderton</td>
+                                <td>Quality Control Specialist</td> -->
+                              </tr>
+                          </tbody>
+                        </table>
+                      </div>
                 </div>
             </div>
 
@@ -66,25 +82,26 @@
                     <div class="border-2 bg-black text-white">
                         <h1 class="text-center font-bold text-2xl pt-4">Budget</h1>
                         <hr class="w-9/12 mx-auto border-red-800 border-2 mb-5">
+
                         <!-- Calculation Part  -->
                         <div class="mt-5 mx-5 inline-flex text-lg">
-                            <h1 class="mx-2">Per Player</h1> <input class="border-2 border-white bg-black w-36" type="text">
+                            <h1 class="mx-2">Per Player</h1> <input id="playere-rate-filed" class="border-2 border-white bg-black w-36" type="text">
                         </div>
-                        <button class="bg-blue-800 w-9/12 mx-7 my-5 text-xl text-white py-2 hover:bg-blue-400">Calculate</button>
+                        <button id="calculate-btn" class="bg-blue-800 w-9/12 mx-7 my-5 text-xl text-white py-2 hover:bg-blue-400">Calculate</button>
                         <div class="inline-flex mx-5 text-lg">
                             <h1>Player Expenses</h1>
-                            <h1 class="mx-8">$<span>5000</span></h1>
+                            <h1 class="mx-8">$<span id="expenses-player">00</span></h1>
                         </div>
                         <div class="mt-5 mx-5 inline-flex text-lg">
-                            <h1 class="mx-2">Manager</h1> <input class="border-2 border-white bg-black w-36" type="text">
+                            <h1 class="mx-2">Manager</h1> <input id="manager-filed" class="border-2 border-white bg-black w-36" type="text">
                         </div>
                         <div class="mt-5 mx-5 inline-flex text-lg">
-                            <h1 class="mx-2">Couch</h1> <input class="border-2 border-white bg-black w-36 ml-5" type="text">
+                            <h1 class="mx-2">Couch</h1> <input id="couch-filed" class="border-2 border-white bg-black w-36 ml-5" type="text">
                         </div>
-                        <button class="bg-blue-800 w-9/12 mx-7 my-5 text-xl text-white py-2 hover:bg-blue-400">Calculate Total</button>
+                        <button id="calculate-total-btn" class="bg-blue-800 w-9/12 mx-7 my-5 text-xl text-white py-2 hover:bg-blue-400">Calculate Total</button>
                         <div class="inline-flex mx-5 text-lg">
                             <h1>Total:</h1>
-                            <h1 class="ml-32 text-orange-600">$<span>5000</span></h1>
+                            <h1 class="ml-32 text-orange-600">$<span id="total-amount">00</span></h1>
                         </div> 
                     </div>
     
@@ -135,5 +152,7 @@
             <p>Larner: Programing Hero || Batch:6</p>
         </div>
     </footer>
+    
+    <script src="javascript/app.js"></script>
 </body>
 </html>
