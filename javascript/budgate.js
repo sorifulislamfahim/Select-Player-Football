@@ -20,9 +20,6 @@ document.getElementById('calculate-btn').addEventListener('click', function(){
     }
 
     const currentPlayerAmount = totalAddPlayerNumber * playerNumber;
-
-    // const playerExpensess = document.getElementById('expenses-player');
-    // playerExpensess.innerText = currentPlayerAmount;
     setElemntID('expenses-player', currentPlayerAmount);
     
 })
@@ -33,10 +30,9 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
     const priviousExpensessAmountString = expensesNumberTotal.innerText;
     const currentExpenses = parseInt(priviousExpensessAmountString);
     if(currentExpenses === 0){
-        return alert('Please calculate Your Player number')
+        return alert('Please calculate Your Players Amount number')
     }
     
-
     const managerFiled = getInputValueNumber('manager-filed')
     if(isNaN(managerFiled)){
         return alert('Please Enter Your Manager Cost Amount')
@@ -44,17 +40,9 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
 
     const couchFiled = getInputValueNumber('couch-filed')
     if(isNaN(couchFiled)){
-        return alert('Please Enter Your Couch Amount')
+        return alert('Please Enter Your Couch cost Amount')
     }
     
-
     const totalAmount = currentExpenses + managerFiled + couchFiled;
-    // console.log(totalAmount);
-
-    
-    // const totalCost = document.getElementById('total-amount');
-    // totalCost.innerText = totalAmount;
-
     setElemntID('total-amount', totalAmount);
-
 })

@@ -7,7 +7,6 @@ for(select of allSelectedButtton){
     number++;
 
     const playerName = element.target.parentNode.childNodes[3].innerText;
-    // console.log(playerName);
 
     const selected = element.target.setAttribute('disabled', '');
 
@@ -16,7 +15,7 @@ for(select of allSelectedButtton){
        return alert('You Cannot Add another players')
     }
         
-    const selectedPlayers = document.getElementById('total-added-player')
+    const selectedPlayers = document.getElementById('total-added-player');
     const privioustotalSelectedString = selectedPlayers.innerText;
     const priviousTotalSelected = parseInt(privioustotalSelectedString);
     selectedPlayers.innerText = number;
