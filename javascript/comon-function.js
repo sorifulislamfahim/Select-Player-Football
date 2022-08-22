@@ -5,7 +5,6 @@ function getInputValueNumber(value){
     return curentInputTotal;
 }
 
-
 function setElemntID(elementId, value){
     const totalCost = document.getElementById(elementId);
     totalCost.innerText = value;
