@@ -1,4 +1,11 @@
 
+// function getElementById(elementId){
+//     const elemntTotalId = document.getElementById('total-added-player');
+//     const elementTotalString = elementId.innerText;
+//     const elementTotal = parseInt(elementTotalString);
+// }
+
+// calculate Function 
 function getPlayerExpensess(){
     const playerRateFiled = document.getElementById('playere-rate-filed');
     const playerRateString = playerRateFiled.value;
@@ -14,13 +21,15 @@ function getPlayerExpensess(){
     const expenssePlayerString = expenssePlayer.innerText;
     const priviousExpensseTotal = parseInt(expenssePlayerString);
 
+    // const elementTotalPlayer = getElementById();
+
     const newExpensseTotal = playerRate * 5; 
     expenssePlayer.innerText = newExpensseTotal;
 
     return priviousExpensseTotal;
 }
 
-
+// calculate Total Function 
 function getInputValue (value){
     const managerFiled = document.getElementById(value);
     const managerValueString = managerFiled.value;

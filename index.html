@@ -57,17 +57,17 @@
                 <div class="border-2">
                     <img class="w-full h-4/6" src="images/Orker.jpg" alt="">
                     <h1 class="text-3xl text-center font-mono pt-2">Orker Ds</h1>
-                    <button onclick="selected(this)"  class="bg-blue-800 w-9/12 mx-7 my-5 text-xl text-white py-2 disabled:bg-gray-400 selected-button">Select</button>
+                    <button class="bg-blue-800 w-9/12 mx-7 my-5 text-xl text-white py-2 disabled:bg-gray-400 selected-button">Select</button>
                 </div>
                 <div class="border-2">
                     <img class="w-full h-4/6" src="images/Pele.jpg" alt="">
                     <h1 class="text-3xl text-center font-mono pt-2">Pele Br</h1>
-                    <button onclick="selected(this)"  class="bg-blue-800 w-9/12 mx-7 my-5 text-xl text-white py-2  disabled:bg-gray-400 selected-button">Select</button>
+                    <button class="bg-blue-800 w-9/12 mx-7 my-5 text-xl text-white py-2  disabled:bg-gray-400 selected-button">Select</button>
                 </div>
                 <div class="border-2">
                     <img class="w-full h-4/6" src="images/Ronaldo.jpg" alt="">
                     <h1 class="text-3xl text-center font-mono pt-2">Ronaldo Br</h1>
-                    <button onclick="selected(this)"  class="bg-blue-800 w-9/12 mx-7 my-5 text-xl text-white py-2  disabled:bg-gray-400 selected-button">Select</button>
+                    <button class="bg-blue-800 w-9/12 mx-7 my-5 text-xl text-white py-2  disabled:bg-gray-400 selected-button">Select</button>
                 </div>
                 <!-- select Part Budgate -->
                     <div class="border-2 bg-black text-white">
@@ -76,7 +76,7 @@
 
                         <!-- Calculation Part  -->
                         <div class="mt-5 mx-5 inline-flex text-lg">
-                            <h1 class="mx-2">Per Player</h1> <input id="playere-rate-filed" class="border-2 border-white bg-black w-36" type="text">
+                            <h1 class="mx-2">Per Player</h1> <input id="playere-rate-filed" class="border-2 border-white bg-black w-36" type="text" placeholder="Player Number">
                         </div>
                         <button id="calculate-btn" class="bg-blue-800 w-9/12 mx-7 my-5 text-xl text-white py-2 hover:bg-blue-400">Calculate</button>
                         <div class="inline-flex mx-5 text-lg">
@@ -143,8 +143,9 @@
             <p>Larner: Programing Hero || Batch:6</p>
         </div>
     </footer>
+    <script src="javascript/comon-function.js"></script>
     <script src="javascript/select-player.js"></script>
-    <script src="javascript/select.js"></script>
-    <script src="javascript/app.js"></script>
+    <script src="javascript/budgate.js"></script>
+    <!-- <script src="javascript/app.js"></script> -->
 </body>
 </html>

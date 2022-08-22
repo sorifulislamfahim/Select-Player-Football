@@ -29,6 +29,5 @@ for(select of allSelectedButtton){
        <td>${playerName}</td>
     `
     playersItemBody.appendChild(tr);
-
 }
 )}
